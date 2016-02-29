@@ -1,0 +1,32 @@
+<div class="block-product" ng-repeat="product in products"> /* шаблон главной страницы */
+  <div class="block-product_face block-product_front">
+    <img ng-src="{{product.img}}" alt="" />
+    <div class="block-product_face_content">
+      <a href="#/{{$index}}"><span class="opac-button" style="opacity: 0.{{10 - ($index + 1)}}">
+        {{product.title}}
+      </span></a>
+    </div>
+  </div>
+  <div class="block-product_face block-product_left">
+    <div class="block-product_face_content">
+      <a href="#/{{$index}}"><span class="opac-button" style="opacity: 0.{{10 - ($index + 1)}}">
+        {{product.title}}
+      </span> </a>
+    </div>
+    <ul>
+      <li> <a href="#"> Горизонтальное </a></li>
+      <li> <a href="#"> вертикальное </a></li>
+      <li> <a href="#"> трейсилеры </a></li>
+      <li> <a href="#"> термоусадочное </a></li>
+      <li> <a href="#"> термоформовочное </a></li>
+      <li> <a href="#"> Паллетоупаковщики </a></li>
+      <li> <a href="#"> вакуумное </a></li>
+      <li> <a href="#"> упаковка на подложку </a></li>
+      <li> <a href="#"> клипсаторы </a></li>
+      <li> <a href="#"> обвязчики мягкими лентами </a></li>
+      <li> <a href="#"> формовщики коробов </a></li>
+      <li> <a href="#"> заклейщики коробов скотчем </a></li>
+      <li> <a href="#"> весовое	 </a></li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Упаковочное оборудование",
+    "img": "img/block-img1.jpg"
+  },
+  {
+    "title": "Упаковочные материалы",
+    "img": "img/block-img2.jpg"
+  },
+  {
+    "title": "Автоматическое оборудование",
+    "img": "img/block-img3.jpg"
+  },
+  {
+    "title": "Технологическое оборудование",
+    "img": "img/block-img4.jpg"
+  },
+  {
+    "title": "Техническое обслуживание",
+    "img": "img/block-img.jpg"
+  }
+]

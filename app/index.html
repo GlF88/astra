@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/bundle.min.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/less.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body ng-app="app">
+    <div class="wrapper"> /**/
+
+      <ng-view> </ng-view> /* здесь появляются все шаблоны, они расположенны app/template/ */
+
+      <div class="footer"> /* футер */
+        <div class="footer_phone">
+          (812) 325 26 72
+        </div>
+        <div class="footer_logo">
+          <a href="#/"> <img src="img/logo.png" alt="" /> </a>
+        </div>
+        <div class="footer_mail">
+          info@merpasa.ru
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript">
+
+        var randomColor = ['#1a48a6', '#a71b3b', '#a6781a', '#1ba768', '#1ba768', '#a71b3b', '#a6781a', '#a71b3b', '#1a48a6', '#1ba768'];
+
+        $(".footer_logo img").hover(function(){ //скрипт для изменения цвета на jquery
+              var randomNumber = Math.floor((Math.random() * 10));
+              $('.footer').addClass('randomColorClass');
+              $('.block-product_face_content span').addClass('randomColorClass');
+              $('.randomColorClass').css({'background': randomColor[randomNumber]})
+            }, function(){
+        });
+
+    </script>
+  </body>
+</html>
